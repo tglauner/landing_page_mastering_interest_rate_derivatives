@@ -551,16 +551,25 @@
     <script src="cookie-consent.js"></script>
     <script src="geo-redirect.js"></script>
 
-    <script async
-        src="https://lz2nh7chtwtqudpfnyuhorxe.agents.do-ai.run/static/chatbot/widget.js"
-        data-agent-id="459a7fe4-44c9-11f0-bf8f-4e013e2ddde4"
-        data-chatbot-id="V8ekmOCci8knhTt2bXZBzl690vjp4uDg"
-        data-name="Chatbot for Interest Rate Derivatives Course"
-        data-primary-color="#031B4E"
-        data-secondary-color="#E5E8ED"
-        data-button-background-color="#0061EB"
-        data-starting-message="Hello! I know all about the Interest Rate Derivatives course. How can I help you?"
-        data-logo="/static/chatbot/icons/default-agent.svg">
-    </script>
+    <script>
+        const isLocalhost = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
+        const logoUrl = isLocalhost
+            ? 'http://localhost:8080/mastering_interest_rate_derivatives/images/TGIR_simple_chatbot_only_logo.png'
+            : '/mastering_interest_rate_derivatives/images/TGIR_simple_chatbot_only_logo.png';
+        
+        const chatbotScript = document.createElement('script');
+        chatbotScript.async = true;
+        chatbotScript.src = 'https://lz2nh7chtwtqudpfnyuhorxe.agents.do-ai.run/static/chatbot/widget.js';
+        chatbotScript.setAttribute('data-agent-id', '459a7fe4-44c9-11f0-bf8f-4e013e2ddde4');
+        chatbotScript.setAttribute('data-chatbot-id', 'V8ekmOCci8knhTt2bXZBzl690vjp4uDg');
+        chatbotScript.setAttribute('data-name', 'Chatbot for Interest Rate Derivatives Course');
+        chatbotScript.setAttribute('data-primary-color', '#031B4E');
+        chatbotScript.setAttribute('data-secondary-color', '#E5E8ED');
+        chatbotScript.setAttribute('data-button-background-color', '#0061EB');
+        chatbotScript.setAttribute('data-starting-message', 'Hello! I know all about the Interest Rate Derivatives course. How can I help you?');
+        chatbotScript.setAttribute('data-logo', logoUrl);
+        
+        document.body.appendChild(chatbotScript);
+    </script>      
 </body>
 </html>
