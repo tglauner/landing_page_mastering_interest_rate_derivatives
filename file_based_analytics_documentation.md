@@ -108,6 +108,13 @@ To change the security token, update it in both files:
    'X-Analytics-Token': 'your_new_token_here'
    ```
 
+## Session Email Notifications
+
+To receive a summary email after a visitor leaves your site, set the environment
+variable `MIRD_NOTIFICATION_EMAIL` on your server. The email will include a list
+of page views and events recorded during a session. No email address is stored
+in the repository; the variable is read at runtime by `track.php`.
+
 ## Troubleshooting
 
 If tracking data isn't being recorded:

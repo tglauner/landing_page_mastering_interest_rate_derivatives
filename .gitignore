@@ -3,3 +3,6 @@ __MACOSX/
 *.log
 *.json
 .env*
+sessions/
+*.jsonl
+

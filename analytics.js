@@ -158,6 +158,9 @@ const MIRDAnalytics = (function() {
         
         // Track scroll depth
         window.addEventListener('scroll', throttle(handleScroll, 500));
+
+        // Track when the user leaves the page
+        window.addEventListener('beforeunload', handleBeforeUnload);
     }
     
     /**
@@ -180,8 +183,10 @@ const MIRDAnalytics = (function() {
         document.querySelectorAll('a[href^="http"]').forEach(link => {
             link.removeEventListener('click', handleExternalLinkClick);
         });
-        
+
         window.removeEventListener('scroll', handleScroll);
+
+        window.removeEventListener('beforeunload', handleBeforeUnload);
     }
     
     /**
@@ -312,6 +317,36 @@ const MIRDAnalytics = (function() {
                 setTimeout(() => inThrottle = false, limit);
             }
         };
+    }
+
+    /**
+     * Send data using navigator.sendBeacon (for unload events)
+     * @param {Object} data - Data to send
+     */
+    function sendBeaconData(data) {
+        if (navigator.sendBeacon) {
+            const blob = new Blob([JSON.stringify(data)], { type: 'application/json' });
+            navigator.sendBeacon('track.php', blob);
+        } else {
+            // Fallback to regular send
+            sendData(data);
+        }
+    }
+
+    /**
+     * Handle user leaving the page
+     */
+    function handleBeforeUnload() {
+        if (!consentGiven || !config.trackingEnabled) return;
+
+        const data = {
+            type: 'session_end',
+            timestamp: new Date().toISOString(),
+            sessionId: sessionId,
+            pageViewCount: pageViewCount
+        };
+
+        sendBeaconData(data);
     }
     
     /**
