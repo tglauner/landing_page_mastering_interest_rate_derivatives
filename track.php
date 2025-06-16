@@ -26,7 +26,9 @@ $config = [
         // Add your domains here
     ],
     'require_token' => true,               // Whether to require a security token
-    'security_token' => 'mird_analytics_token_2025' // Simple security token
+    'security_token' => 'mird_analytics_token_2025', // Simple security token
+    'session_dir' => 'sessions',          // Directory for temporary session data
+    'notification_email' => getenv('MIRD_NOTIFICATION_EMAIL') ?: null
 ];
 
 // Set up CORS headers if origin is allowed
@@ -92,6 +94,18 @@ if (json_last_error() !== JSON_ERROR_NONE) {
     exit;
 }
 
+// Ensure session directory exists
+if (!is_dir($config['session_dir'])) {
+    mkdir($config['session_dir'], 0755, true);
+}
+
+// Store event in session-specific file
+$sessionId = isset($data->sessionId) ? preg_replace('/[^a-zA-Z0-9_-]/', '', $data->sessionId) : null;
+if ($sessionId) {
+    $sessionFile = $config['session_dir'] . '/' . $sessionId . '.jsonl';
+    file_put_contents($sessionFile, json_encode($data) . PHP_EOL, FILE_APPEND | LOCK_EX);
+}
+
 // Add server timestamp and IP (anonymized)
 $data->server_timestamp = date('c');
 $data->anonymized_ip = anonymizeIP($_SERVER['REMOTE_ADDR']);
@@ -122,6 +136,28 @@ if ($success === false) {
     echo json_encode(['status' => 'error', 'message' => 'Failed to store data']);
     logError('Failed to write to data file');
     exit;
+}
+
+// If session ended, send summary email and clean up
+if ($data->type === 'session_end' && $sessionId && !empty($config['notification_email'])) {
+    $events = file($sessionFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    if (count($events) > 1) { // send email only if user interacted a bit
+        $summary = "Session ID: $sessionId\n";
+        foreach ($events as $line) {
+            $event = json_decode($line);
+            if (!$event) continue;
+            $lineStr = $event->timestamp . ' - ' . $event->type;
+            if (isset($event->category) && isset($event->action)) {
+                $lineStr .= ' ' . $event->category . ':' . $event->action;
+            }
+            if (isset($event->page)) {
+                $lineStr .= ' (' . $event->page . ')';
+            }
+            $summary .= $lineStr . "\n";
+        }
+        mail($config['notification_email'], 'MIRD Session Summary', $summary, 'From: no-reply@' . $_SERVER['SERVER_NAME']);
+    }
+    @unlink($sessionFile);
 }
 
 // Return success response
