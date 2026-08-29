@@ -269,32 +269,15 @@ const MIRDCookieConsent = (function() {
      * Add event listener for cookie preferences button in footer
      */
     function addPreferenceButtonListener() {
-        // Add a small delay to ensure the DOM is fully loaded
         setTimeout(() => {
-            // Create the cookie preferences link if it doesn't exist
-            const footerLegal = document.querySelector('.footer-column h3:contains("Legal")');
-            if (footerLegal) {
-                const legalList = footerLegal.nextElementSibling;
-                if (legalList) {
-                    // Check if the cookie preferences link already exists
-                    const existingLink = Array.from(legalList.querySelectorAll('a')).find(a => 
-                        a.textContent.includes('Cookie Preferences')
-                    );
-                    
-                    if (!existingLink) {
-                        const listItem = document.createElement('li');
-                        const link = document.createElement('a');
-                        link.href = 'javascript:void(0);';
-                        link.textContent = 'Cookie Preferences';
-                        link.id = 'cookie-preferences-link';
-                        listItem.appendChild(link);
-                        legalList.appendChild(listItem);
-                        
-                        // Add event listener
-                        link.addEventListener('click', showPreferencesModal);
-                    }
-                }
-            }
+            const link = document.getElementById('cookie-preferences-link');
+            if (!link || link.dataset.consentBound === 'true') return;
+
+            link.dataset.consentBound = 'true';
+            link.addEventListener('click', event => {
+                event.preventDefault();
+                showPreferencesModal();
+            });
         }, 500);
     }
     

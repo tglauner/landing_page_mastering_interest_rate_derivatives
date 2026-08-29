@@ -26,9 +26,6 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="cookie-styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/IRD_favicon.png">
     <script type="application/ld+json">
         {
@@ -46,9 +43,7 @@
                     "@id": "https://tglauner.com/#tim-glauner",
                     "name": "Tim Glauner",
                     "jobTitle": "Founder and Instructor",
-                    "affiliation": {
-                        "@id": "https://tglauner.com/#organization"
-                    }
+                    "affiliation": { "@id": "https://tglauner.com/#organization" }
                 },
                 {
                     "@type": "Course",
@@ -60,12 +55,8 @@
                     "inLanguage": "en",
                     "educationalLevel": "Professional",
                     "courseMode": "online",
-                    "provider": {
-                        "@id": "https://tglauner.com/#organization"
-                    },
-                    "instructor": {
-                        "@id": "https://tglauner.com/#tim-glauner"
-                    },
+                    "provider": { "@id": "https://tglauner.com/#organization" },
+                    "instructor": { "@id": "https://tglauner.com/#tim-glauner" },
                     "offers": {
                         "@type": "Offer",
                         "url": "https://www.udemy.com/course/mastering-interest-rate-derivatives/?couponCode=IRDERIVS25_AUG_2026",
@@ -78,18 +69,8 @@
                     "@type": "BreadcrumbList",
                     "@id": "https://tglauner.com/mastering_interest_rate_derivatives/#breadcrumbs",
                     "itemListElement": [
-                        {
-                            "@type": "ListItem",
-                            "position": 1,
-                            "name": "Home",
-                            "item": "https://tglauner.com/"
-                        },
-                        {
-                            "@type": "ListItem",
-                            "position": 2,
-                            "name": "Mastering Interest Rate Derivatives",
-                            "item": "https://tglauner.com/mastering_interest_rate_derivatives/"
-                        }
+                        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://tglauner.com/" },
+                        { "@type": "ListItem", "position": 2, "name": "Mastering Interest Rate Derivatives", "item": "https://tglauner.com/mastering_interest_rate_derivatives/" }
                     ]
                 },
                 {
@@ -99,50 +80,22 @@
                         {
                             "@type": "Question",
                             "name": "What prerequisites are needed for this course?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "A basic understanding of finance concepts is helpful, but not required. The course starts with fundamentals and progressively builds to more complex topics. A background in economics, finance, or mathematics will help you progress more quickly."
-                            }
+                            "acceptedAnswer": { "@type": "Answer", "text": "A basic understanding of finance concepts is helpful, but not required. The course starts with fundamentals and progressively builds to more complex topics." }
                         },
                         {
                             "@type": "Question",
                             "name": "How long do I have access to the course?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "You'll have lifetime access to the course content, including any future updates. Once enrolled, you can revisit the material as often as needed to refresh your knowledge."
-                            }
+                            "acceptedAnswer": { "@type": "Answer", "text": "You have lifetime access to the course content, including future updates." }
                         },
                         {
                             "@type": "Question",
                             "name": "Is there a certificate upon completion?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "Yes, you'll receive a certificate of completion that you can add to your LinkedIn profile or resume to showcase your specialized knowledge in interest rate derivatives."
-                            }
+                            "acceptedAnswer": { "@type": "Answer", "text": "Yes. You receive a certificate of completion that can be added to LinkedIn or a resume." }
                         },
                         {
                             "@type": "Question",
-                            "name": "How is this different from other finance courses?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "This course focuses specifically on interest rate derivatives with real-world applications from trading floors. It provides end-to-end workflows and practical examples that you can immediately apply in your professional work."
-                            }
-                        },
-                        {
-                            "@type": "Question",
-                            "name": "Can I get a refund if I'm not satisfied?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "Yes, we offer a 30-day money-back guarantee. If you're not completely satisfied with the course, you can request a full refund within 30 days of purchase, no questions asked."
-                            }
-                        },
-                        {
-                            "@type": "Question",
-                            "name": "How quickly can I apply these skills?",
-                            "acceptedAnswer": {
-                                "@type": "Answer",
-                                "text": "Many students begin applying concepts from the early modules immediately in their work. The complete course takes approximately 20-25 hours to complete, but you'll gain applicable skills from the very first module."
-                            }
+                            "name": "Can I get a refund if I am not satisfied?",
+                            "acceptedAnswer": { "@type": "Answer", "text": "Yes. Udemy offers a 30-day money-back guarantee subject to its refund policy." }
                         }
                     ]
                 }
@@ -151,523 +104,219 @@
     </script>
 </head>
 <body>
-    <header>
-        <div class="container">
-            <div class="logo">
-                <div class="logo-text">IR<span>Derivatives</span></div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#curriculum">Curriculum</a></li>
-                    <li><a href="#instructor">Instructor</a></li>
-                    <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#pricing" class="nav-cta">Enroll Now</a></li>
-                </ul>
-            </nav>
-        </div>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+        <a class="brand-lockup" href="https://tglauner.com/" aria-label="TG Investments and Research home">
+            <img class="brand-icon" src="images/IRD_favicon.png" alt="">
+            <span class="brand-name">TG Investments and Research</span>
+            <span class="brand-course">IR Derivatives</span>
+        </a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+            <span class="menu-toggle-label">Menu</span>
+            <span class="menu-toggle-lines" aria-hidden="true"></span>
+        </button>
+        <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+            <a href="#outcomes">Overview</a>
+            <a href="#curriculum">Curriculum</a>
+            <a href="#instructor">Instructor</a>
+            <a href="#reviews">Reviews</a>
+            <a class="nav-enroll" href="#enroll">Enroll</a>
+        </nav>
     </header>
 
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Mastering Interest Rate Derivatives</h1>
-                    <h2>The Definitive Course for Finance Professionals</h2>
-                    <p>Comprehensive training on swaps, curves, caps, floors, and swaptions from industry experts</p>
-                    
-                    <div class="rating">
-                        <div class="stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star-half-alt"></i>
-                        </div>
-                        <span>4.8/5 rating from 25+ finance professionals</span>
-                    </div>
-                    
-                    <div class="cta-container">
-                        <div class="price-container">
-                            <div class="original-price">$199</div>
-                            <div class="discount-price">$149.99</div>
-                        </div>
-                        <a href="#pricing" class="cta-button">Enroll Now - 25% OFF</a>
-                        <div class="countdown-container">
-                            <p>Offer expires in:</p>
-                            <div id="countdown">
-                                <div class="countdown-item">
-                                    <span id="days">2</span>
-                                    <span class="countdown-label">Days</span>
-                                </div>
-                                <div class="countdown-item">
-                                    <span id="hours">12</span>
-                                    <span class="countdown-label">Hours</span>
-                                </div>
-                                <div class="countdown-item">
-                                    <span id="minutes">45</span>
-                                    <span class="countdown-label">Minutes</span>
-                                </div>
-                                <div class="countdown-item">
-                                    <span id="seconds">30</span>
-                                    <span class="countdown-label">Seconds</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+    <main id="main-content">
+        <section class="hero-section" aria-labelledby="course-title">
+            <img class="hero-image" src="images/ficc_trading_floor.png" alt="A fixed-income trading floor lined with market screens">
+            <div class="hero-shade" aria-hidden="true"></div>
+            <div class="hero-grid" aria-hidden="true">
+                <span></span><span></span><span></span><span></span><span></span><span></span>
+            </div>
+            <div class="hero-copy reveal-on-load">
+                <p class="kicker">Rates / Curves / Options</p>
+                <h1 id="course-title">Mastering Interest Rate Derivatives</h1>
+                <p class="hero-lede">Build the desk-ready intuition and practical workflow to price, risk, and hedge SOFR swaps, curves, caps, floors, and swaptions.</p>
+                <div class="hero-rating" aria-label="Rated 4.8 out of 5 by more than 25 finance professionals">
+                    <span class="stars" aria-hidden="true">★★★★★</span>
+                    <span>4.8/5 from 25+ finance professionals</span>
                 </div>
-                <div class="hero-image">
-                    <img src="images/ficc_trading_floor.png" alt="Interest Rate Derivatives Trading Floor">
+                <div class="hero-actions">
+                    <a class="text-action text-action-strong" href="https://www.udemy.com/course/mastering-interest-rate-derivatives/?couponCode=IRDERIVS25_AUG_2026" target="_blank" rel="noopener noreferrer">Enroll on Udemy - 25% OFF <span aria-hidden="true">-&gt;</span></a>
+                    <a class="text-action" href="#curriculum">Explore the curriculum <span aria-hidden="true">-&gt;</span></a>
+                </div>
+                <div class="hero-offer">
+                    <span class="hero-price"><s>$199</s> $149.99</span>
+                    <span>August coupon <code>IRDERIVS25_AUG_2026</code></span>
+                    <span class="hero-deadline" data-countdown-summary>Offer ends August 31</span>
                 </div>
             </div>
-        </div>
-    </section>
+            <div class="desk-strip reveal-on-load" aria-label="Course facts">
+                <div><span class="desk-number">12</span><span class="desk-label">Focused modules</span></div>
+                <div><span class="desk-number">20-25H</span><span class="desk-label">Video and applied work</span></div>
+                <div><span class="desk-number">SOFR / SWAPS / SWAPTIONS</span><span class="desk-label">From market conventions to model risk</span></div>
+            </div>
+        </section>
 
-    <section class="value-proposition">
-        <div class="container">
-            <h2>Why This Course Will Advance Your Finance Career</h2>
-            <div class="benefits">
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <h3>Practical Skills</h3>
-                    <p>Directly applicable to trading floors and treasury departments with real-world examples</p>
+        <section class="section outcomes-section" id="outcomes">
+            <div class="section-intro section-intro-wide reveal">
+                <div>
+                    <p class="kicker">What you will build</p>
+                    <h2>Move from product language to a working pricing and risk process.</h2>
                 </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3>End-to-End Workflow</h3>
-                    <p>Master the complete process for pricing interest rate swaps from start to finish</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-brain"></i>
-                    </div>
-                    <h3>Deep Understanding</h3>
-                    <p>Gain expertise in complex derivatives that employers value and seek in candidates</p>
-                </div>
-                <div class="benefit-card">
-                    <div class="benefit-icon">
-                        <i class="fas fa-rocket"></i>
-                    </div>
-                    <h3>Competitive Edge</h3>
-                    <p>Stand out in the job market with specialized knowledge few professionals possess</p>
+                <p>The course connects market conventions, cashflows, curves, valuation, and risk into one coherent rates workflow. Examples are grounded in the way products are discussed across trading floors, treasury teams, and risk functions.</p>
+            </div>
+            <div class="outcome-grid">
+                <article class="outcome-item reveal"><span class="outcome-code">01 / STRUCTURE</span><h3>Read the trade</h3><p>Understand cashflows, conventions, lifecycle events, and the economic purpose of each product.</p></article>
+                <article class="outcome-item reveal"><span class="outcome-code">02 / CURVES</span><h3>Build the market</h3><p>Translate liquid instruments into discount and projection curves with explicit assumptions.</p></article>
+                <article class="outcome-item reveal"><span class="outcome-code">03 / VALUE</span><h3>Price end to end</h3><p>Move from trade economics and market data to present value, par rate, and sensitivities.</p></article>
+                <article class="outcome-item reveal"><span class="outcome-code">04 / RISK</span><h3>Explain the exposure</h3><p>Interpret Greeks, model choices, hedges, and the behavior of optional rates products.</p></article>
+            </div>
+        </section>
+
+        <section class="instructor-band" id="instructor" aria-labelledby="instructor-title">
+            <div class="instructor-media reveal"><img src="images/instructor.jpg" alt="Tim Glauner, course instructor"></div>
+            <div class="instructor-copy reveal">
+                <p class="kicker">Your instructor</p>
+                <h2 id="instructor-title">Tim Glauner</h2>
+                <p class="instructor-role">Finance professional with FICC trading-floor and treasury experience</p>
+                <p>Tim brings more than 25 years of capital-markets experience from New York, London, and Paris. His teaching connects the mathematics to the desk conversation, making complex products understandable without sanding away the details that matter.</p>
+                <div class="credential-strip" aria-label="Instructor credentials">
+                    <span><strong>25+</strong> years in capital markets</span>
+                    <span><strong>500+</strong> professionals trained</span>
+                    <span><strong>NY / LON / PAR</strong> market perspective</span>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="instructor" id="instructor">
-        <div class="container">
-            <div class="instructor-profile">
-                <div class="instructor-image">
-                    <img src="images/instructor.jpg" alt="Tim Glauner">
-                </div>
-                <div class="instructor-info">
-                    <h2>Learn from an Industry Expert</h2>
-                    <h3>Tim Glauner</h3>
-                    <p class="instructor-title">Finance Professional with FICC Trading Floor Experience</p>
-                    <p>Tim brings years of experience from FICC trading floors and treasury departments in New York. His practical knowledge and teaching approach break down complex concepts into understandable components, making this course accessible yet comprehensive.</p>
-                    <div class="instructor-credentials">
-                        <div class="credential">
-                            <i class="fas fa-briefcase"></i>
-                            <span>25+ Years Experience</span>
-                        </div>
-                        <div class="credential">
-                            <i class="fas fa-university"></i>
-                            <span>Wall Street Background</span>
-                        </div>
-                        <div class="credential">
-                            <i class="fas fa-users"></i>
-                            <span>Trained 500+ Professionals</span>
-                        </div>
-                    </div>
-                </div>
+        <section class="section curriculum-section" id="curriculum">
+            <div class="section-intro reveal">
+                <p class="kicker">The curriculum</p>
+                <h2>Twelve modules. One connected rates framework.</h2>
+                <p>Start with the language of rates, then progress through valuation, curve construction, options, market infrastructure, and real-world use cases.</p>
             </div>
-        </div>
-    </section>
-
-    <section class="curriculum" id="curriculum">
-        <div class="container">
-            <h2>Comprehensive Curriculum Covering All Aspects of Interest Rate Derivatives</h2>
-            <div class="curriculum-container">
+            <div class="curriculum-layout">
                 <div class="module-list">
-                    <div class="module">
-                        <div class="module-header">
-                            <h3>Module 1: Interest Rate Fundamentals</h3>
-                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="module-content">
-                            <p>Grasp the core concepts behind interest rates, including the theories and economic factors that influence their movement.</p>
-                            <ul>
-                                <li>Understanding yield curves and term structure</li>
-                                <li>Economic factors affecting interest rates</li>
-                                <li>Interest rate theories and models</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="module">
-                        <div class="module-header">
-                            <h3>Module 2: Interest Rate Financial Instruments and Derivatives</h3>
-                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="module-content">
-                            <p>Gain a deep understanding of various interest rate financial instruments and derivatives, including their structures, purposes, and how they are used in the market.</p>
-                            <ul>
-                                <li>Overview of interest rate derivatives</li>
-                                <li>Forwards, futures, and options</li>
-                                <li>Structured products and exotic derivatives</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="module">
-                        <div class="module-header">
-                            <h3>Module 3: Valuation of Swaps & Swap Use Cases</h3>
-                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="module-content">
-                            <p>Dive into the valuation techniques of swaps and explore their diverse applications in hedging and speculating.</p>
-                            <ul>
-                                <li>Swap pricing fundamentals</li>
-                                <li>Risk management applications</li>
-                                <li>Case studies from real trading floors</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="module">
-                        <div class="module-header">
-                            <h3>Module 4: End-to-End Workflow to Price an Interest Rate Swap</h3>
-                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="module-content">
-                            <p>Put theory into practice with a detailed walkthrough of pricing an interest rate swap, from entering economic information, generating curves with proper assumptions and calculating the value and greeks of the swap.</p>
-                            <ul>
-                                <li>Step-by-step pricing process</li>
-                                <li>Curve construction and calibration</li>
-                                <li>Greeks calculation and interpretation</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="module">
-                        <div class="module-header">
-                            <h3>Module 5: Building Interest Rate Curves</h3>
-                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="module-content">
-                            <p>Learn the art and science of constructing interest rate curves, a critical tool for pricing and risk management in the fixed income markets.</p>
-                        </div>
-                    </div>
-                    <div class="module">
-                        <div class="module-header">
-                            <h3>Module 6: Cap and Floor Pricing</h3>
-                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="module-content">
-                            <p>Master the valuation and application of caps and floors, essential for managing interest rate exposure.</p>
-                        </div>
-                    </div>
-                    <div class="module">
-                        <div class="module-header">
-                            <h3>Module 7: Swaptions</h3>
-                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="module-content">
-                            <p>In depth lecture covering types of swaptions, use cases of callable swaps and swaptions and an in depth discussion of the Bachelier and Hull&White model to price and risk manage these products.</p>
-                        </div>
-                    </div>
-                    <div class="module">
-                        <div class="module-header">
-                            <h3>And 5 More Modules ...</h3>
-                            <span class="toggle-icon"><i class="fas fa-plus"></i></span>
-                        </div>
-                        <div class="module-content">
-                            <p>The course continues with modules on Swap Real-World Use Cases, FX Concepts and IR Parity, Collateral Management, The Federal Reserve System & FHLBs, and Capital Markets Functional Areas.</p>
-                        </div>
-                    </div>
+                    <article class="module reveal">
+                        <button class="module-header accordion-trigger" type="button" aria-expanded="true" aria-controls="module-1"><span class="module-number">01</span><span class="module-title">Interest Rate Fundamentals</span><span class="toggle-icon" aria-hidden="true">-</span></button>
+                        <div class="module-content accordion-panel" id="module-1"><p>Grasp the core concepts behind interest rates and the forces that shape their movement.</p><ul><li>Yield curves and term structure</li><li>Economic factors affecting rates</li><li>Interest rate theories and models</li></ul></div>
+                    </article>
+                    <article class="module reveal">
+                        <button class="module-header accordion-trigger" type="button" aria-expanded="false" aria-controls="module-2"><span class="module-number">02</span><span class="module-title">Interest Rate Instruments and Derivatives</span><span class="toggle-icon" aria-hidden="true">+</span></button>
+                        <div class="module-content accordion-panel" id="module-2" hidden><p>Understand the structures, purposes, and market uses of the core rates instruments.</p><ul><li>Forwards, futures, and options</li><li>Swaps and structured products</li><li>Trading and hedging applications</li></ul></div>
+                    </article>
+                    <article class="module reveal">
+                        <button class="module-header accordion-trigger" type="button" aria-expanded="false" aria-controls="module-3"><span class="module-number">03</span><span class="module-title">Valuation of Swaps</span><span class="toggle-icon" aria-hidden="true">+</span></button>
+                        <div class="module-content accordion-panel" id="module-3" hidden><p>Price fixed and floating cashflows, derive par rates, and connect valuation changes to risk.</p><ul><li>Swap pricing fundamentals</li><li>Present value and par rate</li><li>Risk-management applications</li></ul></div>
+                    </article>
+                    <article class="module reveal">
+                        <button class="module-header accordion-trigger" type="button" aria-expanded="false" aria-controls="module-4"><span class="module-number">04</span><span class="module-title">End-to-End Swap Pricing Workflow</span><span class="toggle-icon" aria-hidden="true">+</span></button>
+                        <div class="module-content accordion-panel" id="module-4" hidden><p>Walk from entered trade economics and market inputs to curves, value, and Greeks.</p><ul><li>Step-by-step pricing process</li><li>Curve construction and calibration</li><li>Greeks calculation and interpretation</li></ul></div>
+                    </article>
+                    <article class="module reveal">
+                        <button class="module-header accordion-trigger" type="button" aria-expanded="false" aria-controls="module-5"><span class="module-number">05</span><span class="module-title">Building Interest Rate Curves</span><span class="toggle-icon" aria-hidden="true">+</span></button>
+                        <div class="module-content accordion-panel" id="module-5" hidden><p>Construct the discount and projection curves used to price and risk-manage modern rates products.</p></div>
+                    </article>
+                    <article class="module reveal">
+                        <button class="module-header accordion-trigger" type="button" aria-expanded="false" aria-controls="module-6"><span class="module-number">06</span><span class="module-title">Cap and Floor Pricing</span><span class="toggle-icon" aria-hidden="true">+</span></button>
+                        <div class="module-content accordion-panel" id="module-6" hidden><p>Value caps and floors and understand their role in managing asymmetric interest-rate exposure.</p></div>
+                    </article>
+                    <article class="module reveal">
+                        <button class="module-header accordion-trigger" type="button" aria-expanded="false" aria-controls="module-7"><span class="module-number">07</span><span class="module-title">Swaptions and Callable Swaps</span><span class="toggle-icon" aria-hidden="true">+</span></button>
+                        <div class="module-content accordion-panel" id="module-7" hidden><p>Study swaption types and use cases, callable swaps, and the Bachelier and Hull-White pricing models.</p></div>
+                    </article>
+                    <article class="module reveal">
+                        <button class="module-header accordion-trigger" type="button" aria-expanded="false" aria-controls="module-8"><span class="module-number">08</span><span class="module-title">Swap Real-World Use Cases</span><span class="toggle-icon" aria-hidden="true">+</span></button>
+                        <div class="module-content accordion-panel" id="module-8" hidden><p>Connect swap structures to practical hedging, funding, relative-value, and asset-liability decisions.</p></div>
+                    </article>
+                    <article class="module reveal">
+                        <button class="module-header accordion-trigger" type="button" aria-expanded="false" aria-controls="module-9"><span class="module-number">09</span><span class="module-title">FX Concepts and Interest Rate Parity</span><span class="toggle-icon" aria-hidden="true">+</span></button>
+                        <div class="module-content accordion-panel" id="module-9" hidden><p>Relate rates to foreign exchange through interest-rate parity and main-money currency concepts.</p></div>
+                    </article>
+                    <article class="module reveal">
+                        <button class="module-header accordion-trigger" type="button" aria-expanded="false" aria-controls="module-10"><span class="module-number">10</span><span class="module-title">Collateral Management</span><span class="toggle-icon" aria-hidden="true">+</span></button>
+                        <div class="module-content accordion-panel" id="module-10" hidden><p>Understand how collateral terms, discounting, and operational choices affect derivative valuation.</p></div>
+                    </article>
+                    <article class="module reveal">
+                        <button class="module-header accordion-trigger" type="button" aria-expanded="false" aria-controls="module-11"><span class="module-number">11</span><span class="module-title">The Federal Reserve and FHLB Systems</span><span class="toggle-icon" aria-hidden="true">+</span></button>
+                        <div class="module-content accordion-panel" id="module-11" hidden><p>Place rates markets within the institutions and funding structures that influence liquidity and monetary transmission.</p></div>
+                    </article>
+                    <article class="module reveal">
+                        <button class="module-header accordion-trigger" type="button" aria-expanded="false" aria-controls="module-12"><span class="module-number">12</span><span class="module-title">Capital Markets Functional Areas</span><span class="toggle-icon" aria-hidden="true">+</span></button>
+                        <div class="module-content accordion-panel" id="module-12" hidden><p>See how trading, sales, structuring, risk, treasury, operations, and technology work together across the product lifecycle.</p></div>
+                    </article>
                 </div>
-                <div class="preview-container">
-                    <h3>Preview a Lesson</h3>
-                    <div class="video-preview">
-                        <img src="images/preview_lesson.jpg" alt="Course Preview">
-                        <div class="play-button">
-                            <i class="fas fa-play"></i>
-                        </div>
-                    </div>
-                    <a href="#pricing" class="secondary-cta">Get Full Access Now</a>
-                </div>
+                <aside class="preview-panel reveal" aria-labelledby="preview-title">
+                    <p class="preview-code">COURSE PREVIEW / 16:9</p>
+                    <button class="video-preview" type="button" aria-label="Open the course preview on Udemy"><img src="images/preview_lesson.jpg" alt="Course slide listing the interest rate derivatives lectures"><span class="play-button" aria-hidden="true"><i class="fas fa-play"></i></span></button>
+                    <h3 id="preview-title">See how the material is taught.</h3>
+                    <p>Open a free Udemy lesson and review the lecture structure before enrolling.</p>
+                    <a class="line-link" href="https://www.udemy.com/course/mastering-interest-rate-derivatives/" target="_blank" rel="noopener noreferrer">Watch the preview <span aria-hidden="true">-&gt;</span></a>
+                </aside>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="audience">
-        <div class="container">
-            <h2>Who Will Benefit from This Course</h2>
-            <div class="persona-cards">
-                <div class="persona-card">
-                    <div class="persona-icon">
-                        <i class="fas fa-user-tie"></i>
-                    </div>
-                    <h3>Junior Analysts</h3>
-                    <p>Ideal for junior analysts in finance, particularly in roles related to capital markets, risk management, or derivatives trading, who seek to deepen their knowledge.</p>
-                </div>
-                <div class="persona-card">
-                    <div class="persona-icon">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>Finance Students</h3>
-                    <p>Perfectly suited for finance majors, covering essential topics that significantly enhance understanding of interest rate derivatives and financial markets.</p>
-                </div>
-                <div class="persona-card">
-                    <div class="persona-icon">
-                        <i class="fas fa-chart-bar"></i>
-                    </div>
-                    <h3>Senior Analysts</h3>
-                    <p>Highly relevant for senior analysts specializing in interest rate derivatives, capital markets, or related areas, with directly applicable content.</p>
-                </div>
-                <div class="persona-card">
-                    <div class="persona-icon">
-                        <i class="fas fa-briefcase"></i>
-                    </div>
-                    <h3>Finance Executives</h3>
-                    <p>Suitable for executives who need a comprehensive understanding of interest rate derivatives for decision-making, strategy, or oversight.</p>
-                </div>
-                <div class="persona-card">
-                    <div class="persona-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3>Engineering Professionals</h3>
-                    <p>Valuable for engineering professionals interested in financial applications, especially those specializing in financial engineering.</p>
-                </div>
+        <section class="audience-band" aria-labelledby="audience-title">
+            <div class="audience-intro reveal"><p class="kicker">Built for the market</p><h2 id="audience-title">Technical enough for practitioners. Clear enough to build from first principles.</h2></div>
+            <div class="audience-grid">
+                <article class="audience-item reveal"><span>01</span><h3>Analysts</h3><p>Build a rigorous product foundation for trading, risk, treasury, or operations roles.</p></article>
+                <article class="audience-item reveal"><span>02</span><h3>Finance students</h3><p>Add practical market workflows to an academic finance or economics foundation.</p></article>
+                <article class="audience-item reveal"><span>03</span><h3>Senior professionals</h3><p>Refresh product depth and connect specialist concepts across adjacent functions.</p></article>
+                <article class="audience-item reveal"><span>04</span><h3>Engineers and quants</h3><p>Link implementation work to the economic meaning of trades, curves, and risk.</p></article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="testimonials" id="testimonials">
-        <div class="container">
-            <h2>What Finance Professionals Are Saying</h2>
-            <div class="testimonial-cards">
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"I started this course knowing almost nothing about interest rate derivatives — now I feel like I’ve unlocked a whole new world. It’s clear, engaging, and builds your understanding from the ground up without ever feeling overwhelming."</p>
-                    <div class="testimonial-author">
-                        <div>
-                            <h4>Geralt M.</h4>
-                            <p>Ph.D. Student, Germany</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p class="testimonial-text">"Great course. The professor added swaptions and is even further evolving the course so it's very nice and answers questions if needed."</p>
-                    <div class="testimonial-author">
-                        <div>
-                            <h4>Laura M.</h4>
-                            <p>Swaps and MM Operations, Large Bank</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-rating">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star-half-alt"></i>
-                    </div>
-                    <p class="testimonial-text">"This Wall Street finance course is really very impressive! The teacher has deep knowledge and explains in a way that is both clear and high-quality. Many important concepts are included."</p>
-                    <div class="testimonial-author">
-                        <div>
-                            <h4>Rui T.</h4>
-                            <p>Risk Management, Large Bank</p>
-                        </div>
-                    </div>
-                </div>
+        <section class="section testimonials-section" id="reviews">
+            <div class="section-intro reveal"><p class="kicker">Student perspective</p><h2>Clear explanations, practical depth.</h2></div>
+            <div class="testimonial-grid">
+                <figure class="testimonial-card reveal"><div class="testimonial-rating" aria-label="5 out of 5 stars">★★★★★</div><blockquote>"I started this course knowing almost nothing about interest rate derivatives - now I feel like I've unlocked a whole new world. It's clear, engaging, and builds your understanding from the ground up."</blockquote><figcaption><strong>Geralt M.</strong><span>Ph.D. student, Germany</span></figcaption></figure>
+                <figure class="testimonial-card reveal"><div class="testimonial-rating" aria-label="5 out of 5 stars">★★★★★</div><blockquote>"Great course. The professor added swaptions and is even further evolving the course. He also answers questions if needed."</blockquote><figcaption><strong>Laura M.</strong><span>Swaps and MM operations, large bank</span></figcaption></figure>
+                <figure class="testimonial-card reveal"><div class="testimonial-rating" aria-label="4.5 out of 5 stars">★★★★½</div><blockquote>"The teacher has deep knowledge and explains in a way that is both clear and high-quality. Many important concepts are included."</blockquote><figcaption><strong>Rui T.</strong><span>Risk management, large bank</span></figcaption></figure>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="offer" id="pricing">
-        <div class="container">
-            <div class="offer-content">
-                <div class="offer-badge">
-                    <span>SPECIAL OFFER</span>
-                </div>
-                <h2>Limited-Time 25% Discount</h2>
-                <div class="offer-details">
-                    <div class="offer-pricing">
-                        <div class="original-price">$199</div>
-                        <div class="discount-price">$149.99</div>
-                    </div>
-                    <div class="offer-timer">
-                        <p>Offer expires in:</p>
-                        <div id="countdown-offer">
-                            <div class="countdown-item">
-                                <span id="days-offer">2</span>
-                                <span class="countdown-label">Days</span>
-                            </div>
-                            <div class="countdown-item">
-                                <span id="hours-offer">12</span>
-                                <span class="countdown-label">Hours</span>
-                            </div>
-                            <div class="countdown-item">
-                                <span id="minutes-offer">45</span>
-                                <span class="countdown-label">Minutes</span>
-                            </div>
-                            <div class="countdown-item">
-                                <span id="seconds-offer">30</span>
-                                <span class="countdown-label">Seconds</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="coupon-code">
-                    <p>Use exclusive coupon code:</p>
-                    <div class="code">IRDERIVS25_AUG_2026</div>
-                </div>
-                <div class="offer-features">
-                    <h3>What You'll Get:</h3>
-                    <ul>
-                        <li><i class="fas fa-check"></i> Lifetime access to all 12 comprehensive modules</li>
-                        <li><i class="fas fa-check"></i> Downloadable resources and practice materials</li>
-                        <li><i class="fas fa-check"></i> End-to-end workflow examples for real-world application</li>
-                        <li><i class="fas fa-check"></i> Certificate of completion</li>
-                        <li><i class="fas fa-check"></i> 30-day money-back guarantee</li>
-                    </ul>
-                </div>
-                <a href="https://www.udemy.com/course/mastering-interest-rate-derivatives/?couponCode=IRDERIVS25_AUG_2026" class="primary-cta">Enroll Now with 25% Discount</a>
-                <p class="seats-limited">Only <span class="highlight">17 seats</span> remaining at this price!</p>
+        <section class="enroll-band" id="enroll" aria-labelledby="enroll-title">
+            <div class="enroll-copy reveal">
+                <p class="kicker">August 2026 course offer</p>
+                <h2 id="enroll-title">Take the full rates workflow with you.</h2>
+                <p>Enroll through Udemy for lifetime access to all 12 modules, downloadable resources, practice materials, future updates, and a certificate of completion.</p>
+                <div class="guarantee-line"><i class="fas fa-shield-alt" aria-hidden="true"></i><span><strong>30-day money-back guarantee</strong><br>Subject to Udemy's refund policy.</span></div>
             </div>
-        </div>
-    </section>
+            <div class="enroll-details reveal">
+                <span class="offer-label">25% OFF</span>
+                <p class="offer-price"><s>$199</s> <strong>$149.99</strong></p>
+                <p class="offer-note">Coupon code</p>
+                <button class="coupon-code" type="button" data-copy-coupon="IRDERIVS25_AUG_2026" title="Copy coupon code"><code>IRDERIVS25_AUG_2026</code><i class="far fa-copy" aria-hidden="true"></i><span class="sr-only">Copy coupon code</span></button>
+                <div class="countdown" aria-label="Time remaining in the offer">
+                    <span><strong data-countdown="days">3</strong> days</span><span><strong data-countdown="hours">0</strong> hours</span><span><strong data-countdown="minutes">0</strong> min</span><span><strong data-countdown="seconds">0</strong> sec</span>
+                </div>
+                <a class="enroll-link" href="https://www.udemy.com/course/mastering-interest-rate-derivatives/?couponCode=IRDERIVS25_AUG_2026" target="_blank" rel="noopener noreferrer">Enroll on Udemy <span aria-hidden="true">-&gt;</span></a>
+            </div>
+        </section>
 
-    <section class="faq" id="faq">
-        <div class="container">
-            <h2>Frequently Asked Questions</h2>
-            <div class="faq-container">
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>What prerequisites are needed for this course?</h3>
-                        <span class="toggle-icon"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>A basic understanding of finance concepts is helpful, but not required. The course starts with fundamentals and progressively builds to more complex topics. A background in economics, finance, or mathematics will help you progress more quickly.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How long do I have access to the course?</h3>
-                        <span class="toggle-icon"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>You'll have lifetime access to the course content, including any future updates. Once enrolled, you can revisit the material as often as needed to refresh your knowledge.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Is there a certificate upon completion?</h3>
-                        <span class="toggle-icon"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Yes, you'll receive a certificate of completion that you can add to your LinkedIn profile or resume to showcase your specialized knowledge in interest rate derivatives.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How is this different from other finance courses?</h3>
-                        <span class="toggle-icon"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>This course focuses specifically on interest rate derivatives with real-world applications from trading floors. Unlike theoretical courses, it provides end-to-end workflows and practical examples that you can immediately apply in your professional work.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>Can I get a refund if I'm not satisfied?</h3>
-                        <span class="toggle-icon"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Yes, we offer a 30-day money-back guarantee. If you're not completely satisfied with the course, you can request a full refund within 30 days of purchase, no questions asked.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question">
-                        <h3>How quickly can I apply these skills?</h3>
-                        <span class="toggle-icon"><i class="fas fa-plus"></i></span>
-                    </div>
-                    <div class="faq-answer">
-                        <p>Many students begin applying concepts from the early modules immediately in their work. The complete course takes approximately 20-25 hours to complete, but you'll gain applicable skills from the very first module.</p>
-                    </div>
+        <section class="section faq-section" id="faq">
+            <div class="faq-layout">
+                <div class="section-intro reveal"><p class="kicker">Before you enroll</p><h2>Frequently asked questions.</h2><p>Course access and payment are handled by Udemy. The curriculum is designed to meet learners where they are and build depth progressively.</p></div>
+                <div class="faq-list">
+                    <article class="faq-item reveal"><button class="faq-question accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-1"><span>What prerequisites are needed?</span><span class="toggle-icon" aria-hidden="true">+</span></button><div class="faq-answer accordion-panel" id="faq-1" hidden><p>A basic understanding of finance is helpful, but not required. The course starts with fundamentals and progressively builds toward more complex products and models.</p></div></article>
+                    <article class="faq-item reveal"><button class="faq-question accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-2"><span>How long do I have access?</span><span class="toggle-icon" aria-hidden="true">+</span></button><div class="faq-answer accordion-panel" id="faq-2" hidden><p>You have lifetime access to the course content through Udemy, including future course updates.</p></div></article>
+                    <article class="faq-item reveal"><button class="faq-question accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-3"><span>Is there a certificate?</span><span class="toggle-icon" aria-hidden="true">+</span></button><div class="faq-answer accordion-panel" id="faq-3" hidden><p>Yes. Udemy provides a certificate of completion that can be added to LinkedIn or your resume.</p></div></article>
+                    <article class="faq-item reveal"><button class="faq-question accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-4"><span>How is this different from a theory-only course?</span><span class="toggle-icon" aria-hidden="true">+</span></button><div class="faq-answer accordion-panel" id="faq-4" hidden><p>The material follows end-to-end workflows and real market use cases, linking product theory to inputs, pricing, sensitivities, and risk decisions.</p></div></article>
+                    <article class="faq-item reveal"><button class="faq-question accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-5"><span>Can I request a refund?</span><span class="toggle-icon" aria-hidden="true">+</span></button><div class="faq-answer accordion-panel" id="faq-5" hidden><p>Udemy offers a 30-day money-back guarantee, subject to its refund policy and eligibility rules.</p></div></article>
+                    <article class="faq-item reveal"><button class="faq-question accordion-trigger" type="button" aria-expanded="false" aria-controls="faq-6"><span>How quickly can I apply the material?</span><span class="toggle-icon" aria-hidden="true">+</span></button><div class="faq-answer accordion-panel" id="faq-6" hidden><p>Many learners can apply concepts from the early modules immediately. The complete course takes approximately 20-25 hours, but each module is designed to stand on its own.</p></div></article>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="guarantee" id="guarantee">
-        <div class="container">
-            <div class="guarantee-content">
-                <div class="guarantee-icon">
-                    <i class="fas fa-shield-alt"></i>
-                </div>
-                <div class="guarantee-text">
-                    <h2>30-Day Money-Back Guarantee</h2>
-                    <p>We're confident you'll find tremendous value in this course. If for any reason you're not completely satisfied, simply request a refund within 30 days of purchase for a full refund. No questions asked.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="final-cta">
-        <div class="container">
-            <h2>Ready to Master Interest Rate Derivatives?</h2>
-            <p>Join hundreds of finance professionals who have advanced their careers with this comprehensive course.</p>
-            <a href="https://www.udemy.com/course/mastering-interest-rate-derivatives/?couponCode=IRDERIVS25_AUG_2026" class="primary-cta">Enroll Now with 25% Discount</a>
-            <div class="final-countdown">
-                <p>Offer expires in: <span id="final-timer">2 days, 12 hours, 45 minutes</span></p>
-            </div>
-        </div>
-    </section>
+        <section class="closing-band">
+            <div class="closing-copy reveal"><p class="kicker">Master the curve</p><h2>Understand what the desk sees.</h2><p>Move from rates fundamentals to practical valuation and risk with one connected course.</p><a class="text-action text-action-strong" href="https://www.udemy.com/course/mastering-interest-rate-derivatives/?couponCode=IRDERIVS25_AUG_2026" target="_blank" rel="noopener noreferrer">Start the course <span aria-hidden="true">-&gt;</span></a></div>
+        </section>
+    </main>
 
     <div id="footer-placeholder"></div>
-
     <script src="script.js"></script>
     <script src="cookie-consent.js"></script>
     <script src="geo-redirect.js"></script>
     <script src="footer.js"></script>
-
-    <!-- <script>
-        const isLocalhost = location.hostname === 'localhost' || location.hostname === '127.0.0.1';
-        const logoUrl = isLocalhost
-            ? 'http://localhost:8080/mastering_interest_rate_derivatives/images/TGIR_simple_chatbot_only_logo.png'
-            : 'http://tglauner.com/mastering_interest_rate_derivatives/images/TGIR_simple_chatbot_only_logo.png';
-        
-        const chatbotScript = document.createElement('script');
-        chatbotScript.async = true;
-        chatbotScript.src = 'https://lz2nh7chtwtqudpfnyuhorxe.agents.do-ai.run/static/chatbot/widget.js';
-        chatbotScript.setAttribute('data-agent-id', '459a7fe4-44c9-11f0-bf8f-4e013e2ddde4');
-        chatbotScript.setAttribute('data-chatbot-id', 'V8ekmOCci8knhTt2bXZBzl690vjp4uDg');
-        chatbotScript.setAttribute('data-name', 'Chatbot for Interest Rate Derivatives Course');
-        chatbotScript.setAttribute('data-primary-color', '#031B4E');
-        chatbotScript.setAttribute('data-secondary-color', '#E5E8ED');
-        chatbotScript.setAttribute('data-button-background-color', '#0061EB');
-        chatbotScript.setAttribute('data-starting-message', 'Hello! I know all about the Interest Rate Derivatives course. How can I help you?');
-        chatbotScript.setAttribute('data-logo', logoUrl);
-        
-        document.body.appendChild(chatbotScript);
-    </script>       -->
     <script src="/js/tracking.js" defer></script>
 </body>
 </html>
