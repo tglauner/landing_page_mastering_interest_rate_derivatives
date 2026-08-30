@@ -103,7 +103,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    const countdownTarget = new Date("2026-09-01T03:59:59Z").getTime();
+    const countdownTarget = new Date("2026-10-01T03:59:59Z").getTime();
     const countdownValues = {
         days: document.querySelector('[data-countdown="days"]'),
         hours: document.querySelector('[data-countdown="hours"]'),
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (countdownSummary) {
             countdownSummary.textContent = distance > 0
                 ? `Offer ends in ${days}d ${hours}h ${minutes}m`
-                : "August offer has ended";
+                : "September offer has ended";
         }
 
         return distance;
